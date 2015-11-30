@@ -1,0 +1,49 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+X:
+ MOV 0, DOWN
+ MOV 3, DOWN
+JMP X
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV 17, ACC
+Y:
+ MOV 0, DOWN
+ MOV ACC, DOWN
+ SWP
+ MOV 30, ACC
+ X:
+  MOV UP DOWN
+  SUB 1
+ JGZ X
+ MOV -1, DOWN
+ SWP
+ SUB 1
+ MOV UP, NIL
+ JMP Y
+
+@10
+

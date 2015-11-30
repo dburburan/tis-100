@@ -1,0 +1,55 @@
+@0
+
+
+@1
+ MOV 17 ACC
+ SAV
+ MOV UP ACC
+LOOP:
+  SWP
+  MOV ACC DOWN
+  SUB 1
+  SWP
+  SUB 1
+ JGZ LOOP
+  MOV -1 DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+LOOP:
+  MOV UP ACC
+ JLZ END
+  SWP
+  MOV ACC RIGHT
+  SWP
+  MOV ACC RIGHT
+  MOV 3 RIGHT
+  MOV -1 RIGHT
+ JMP LOOP
+END:
+  SWP
+  ADD 1
+  SWP
+
+@6
+MOV LEFT DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP DOWN
+
+@10
+

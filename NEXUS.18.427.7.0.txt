@@ -1,0 +1,47 @@
+@0
+
+
+@1
+MOV UP ACC
+#MOV LEFT ACC
+
+L:SUB 8
+ JLZ D
+  MOV 1 DOWN
+ JMP L
+D:ADD 8
+  MOV ACC RIGHT
+  MOV 3 DOWN
+
+@2
+MOV LEFT DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV 0 ACC
+S:JRO UP
+  ADD 10
+ JMP S
+  MOV ACC RIGHT
+
+@6
+MOV UP ACC
+ADD LEFT
+MOV ACC DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP DOWN
+
+@10
+

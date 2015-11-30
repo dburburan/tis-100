@@ -1,0 +1,40 @@
+@0
+
+
+@1
+  MOV UP ACC
+S:JRO DOWN
+  MOV ACC DOWN
+ JEZ Z
+  SUB 1
+  MOV -2 DOWN
+ JMP S
+Z:MOV 1 DOWN
+
+@2
+
+
+@3
+
+
+@4
+S:MOV 0 ACC
+A:MOV 1 UP
+  ADD UP
+ JRO UP
+  MOV ACC DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV UP DOWN
+
+@9
+

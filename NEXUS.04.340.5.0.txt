@@ -1,0 +1,53 @@
+@0
+
+
+@1
+MOV UP ACC
+SAV
+L1:SUB 1
+ JLZ D2
+  MOV 1 RIGHT
+ JMP L1
+D2:SWP
+NEG
+ADD UP
+L2:JLZ D3
+  MOV 3 RIGHT
+  SUB 1
+ JMP L2
+D3:MOV 5 RIGHT
+
+@2
+S:JRO LEFT
+  MOV UP NIL
+ JMP S
+  MOV UP DOWN
+ JMP S
+  L:MOV UP ACC
+   JEZ D
+   JMP L
+  D: MOV 0 DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP DOWN
+
+@10
+

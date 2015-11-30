@@ -1,0 +1,43 @@
+@0
+
+
+@1
+  MOV 0, RIGHT
+LOOP:
+  MOV UP, ACC
+ JEZ END
+  MOV ACC, RIGHT
+ JMP LOOP
+END:
+  MOV 1, DOWN
+  MOV DOWN, NIL
+
+@2
+
+
+@3
+
+
+@4
+MOV UP, RIGHT
+MOV RIGHT, UP
+
+@5
+  MOV LEFT, NIL
+LOOP:
+  MOV UP, ACC
+ JEZ END
+  MOV ACC, DOWN
+ JMP LOOP
+END:
+ MOV 1, LEFT
+ MOV 0, DOWN
+
+@6
+
+
+@7
+MOV UP, DOWN
+
+@8
+

@@ -1,0 +1,50 @@
+@0
+
+
+@1
+  MOV UP, ACC
+  SAV
+  MOV RIGHT, ACC
+LOOP:
+ JEZ END
+  SWP
+  MOV ACC, DOWN
+  MOV 1, DOWN
+  SWP
+  SUB 1
+ JMP LOOP
+END:
+ MOV 0, DOWN
+ MOV 0, DOWN
+
+@2
+  MOV UP, LEFT
+
+@3
+
+
+@4
+  MOV 0, ACC
+  SAV
+LOOP:
+  SWP
+  ADD UP
+  SWP
+  MOV UP, ACC
+ JEZ END
+ JMP LOOP
+END:
+  SWP
+  MOV ACC, RIGHT
+
+@5
+MOV LEFT, DOWN
+
+@6
+
+
+@7
+MOV UP, DOWN
+
+@8
+

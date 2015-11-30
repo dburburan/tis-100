@@ -1,0 +1,63 @@
+@0
+
+
+@1
+MOV UP ACC
+SAV
+MOV UP ACC
+SWP
+LOOP:
+ SUB 1
+ SWP
+ MOV ACC DOWN
+ SWP
+ JGZ LOOP
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV 30 ACC
+LOOP:
+  MOV ACC RIGHT
+  SWP
+  MOV ACC RIGHT
+  SWP
+  MOV UP RIGHT
+  SUB 1
+ JGZ LOOP
+  SWP
+  ADD 1
+  SWP
+
+@6
+MOV 30 ACC
+SUB LEFT
+MOV ACC DOWN
+
+MOV LEFT DOWN
+
+MOV LEFT DOWN
+
+MOV -1 DOWN
+
+@7
+
+
+@8
+
+
+@9
+
+
+@10
+MOV UP DOWN
+
+@11
+
